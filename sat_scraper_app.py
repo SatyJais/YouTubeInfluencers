@@ -1,9 +1,10 @@
 import streamlit as st
 from googleapiclient.discovery import build
 import pandas as pd
-
+import os
+API_KEY = os.getenv("API_KEY")
 # ---- CONFIG ----
-API_KEY = 'AIzaSyBdskqXi7npoqY9GZyOMSmHGOVQUyqCVP4'  # <-- Replace with your actual API key
+# API_KEY = 'AIzaSyBdskqXi7npoqY9GZyOMSmHGOVQUyqCVP4'  # <-- Replace with your actual API key
 youtube = build('youtube', 'v3', developerKey=API_KEY)
 
 # ---- FUNCTIONS ----
