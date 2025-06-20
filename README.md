@@ -20,6 +20,16 @@ This Streamlit app helps you **find small to medium YouTube influencers** in the
 ```bash
 git clone https://github.com/yourusername/sat-scraper.git
 cd sat-scraper
-
+```
+### 2. Create a Virtual Environment (Optional but Recommended)
+```bash
+python -m venv venv
+source venv/bin/activate      # macOS/Linux
+venv\Scripts\activate         # Windows
+```
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 ### Built by Satyarth
 #### For questions or collaborations, reach out at jaiswal.satyarth070@gmail.com
