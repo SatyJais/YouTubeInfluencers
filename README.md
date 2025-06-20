@@ -1,6 +1,7 @@
 # 🎓 SAT "Micro" Influencer Scraper – Streamlit App
 
-This Streamlit app helps you **find small to medium YouTube influencers** in the **SAT prep and college admissions niche**. It uses the **YouTube Data API v3** to search channels based on user-defined keywords and filters by subscriber count.
+This Streamlit app helps you **find small to medium YouTube influencers** in the **SAT prep and college admissions niche**. You can change the search terms to get a list of influencers in other domains. 
+It uses the **YouTube Data API v3** to search channels based on user-defined keywords and filters by subscriber count.
 
 ---
 
