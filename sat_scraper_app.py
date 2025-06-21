@@ -39,7 +39,7 @@ def get_channel_stats(channel_id):
 st.title("🎓 YouTube Influencer Finder")
 
 search_query = st.text_input("Search Keyword", value="SAT prep")
-max_subs = st.slider("Max Subscriber Count", min_value=1000, max_value=500000, value=250000, step=1000)
+max_subs = st.slider("Max Subscriber Count", min_value=100, max_value=500000, value=250000, step=1000)
 run_search = st.button("Search YouTube Influencers")
 
 if run_search:
@@ -50,7 +50,7 @@ if run_search:
         for item in results:
             channel_id = item['snippet']['channelId']
             stats = get_channel_stats(channel_id)
-            if 1000 <= stats.get('Subscribers', 0) <= max_subs:
+            if 100 <= stats.get('Subscribers', 0) <= max_subs:
                 influencer_data.append(stats)
 
         if influencer_data:
