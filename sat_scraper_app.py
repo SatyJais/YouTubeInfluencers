@@ -11,7 +11,7 @@ youtube = build('youtube', 'v3', developerKey=API_KEY)
 def search_channels(query, max_results=50):
     request = youtube.search().list(
         q=query,
-        type='channel',
+        type='video',
         part='snippet',
         maxResults=max_results
     )
@@ -37,7 +37,7 @@ def get_channel_stats(channel_id):
     return {}
 
 # ---- STREAMLIT UI ----
-st.title("🎓 SAT Prep Influencer Finder")
+st.title("🎓 YouTube Influencer Finder")
 
 search_query = st.text_input("Search Keyword", value="SAT prep")
 max_subs = st.slider("Max Subscriber Count", min_value=100, max_value=50000, value=25000, step=500)
