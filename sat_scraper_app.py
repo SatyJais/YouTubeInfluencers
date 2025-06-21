@@ -8,11 +8,12 @@ API_KEY = os.getenv("API_KEY")
 youtube = build('youtube', 'v3', developerKey=API_KEY)
 
 # ---- FUNCTIONS ----
-def search_channels(query):
+def search_channels(query, max_results=500):
     request = youtube.search().list(
         q=query,
         type='channel',
-        part='snippet'
+        part='snippet',
+        maxResults=max_results
     )
     response = request.execute()
     return response['items']
