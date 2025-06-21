@@ -11,7 +11,7 @@ youtube = build('youtube', 'v3', developerKey=API_KEY)
 def search_channels(query, max_results=50):
     request = youtube.search().list(
         q=query,
-        type='video',
+        type='channel',
         part='snippet',
         maxResults=max_results
     )
