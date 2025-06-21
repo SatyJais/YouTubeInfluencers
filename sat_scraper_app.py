@@ -8,12 +8,11 @@ API_KEY = os.getenv("API_KEY")
 youtube = build('youtube', 'v3', developerKey=API_KEY)
 
 # ---- FUNCTIONS ----
-def search_channels(query, max_results=50):
+def search_channels(query):
     request = youtube.search().list(
         q=query,
         type='channel',
-        part='snippet',
-        maxResults=max_results
+        part='snippet'
     )
     response = request.execute()
     return response['items']
@@ -40,7 +39,7 @@ def get_channel_stats(channel_id):
 st.title("🎓 YouTube Influencer Finder")
 
 search_query = st.text_input("Search Keyword", value="SAT prep")
-max_subs = st.slider("Max Subscriber Count", min_value=100, max_value=50000, value=25000, step=500)
+max_subs = st.slider("Max Subscriber Count", min_value=1000, max_value=500000, value=250000, step=1000)
 run_search = st.button("Search YouTube Influencers")
 
 if run_search:
@@ -59,6 +58,6 @@ if run_search:
             st.success(f"Found {len(df)} influencers.")
             st.dataframe(df)
             csv = df.to_csv(index=False).encode('utf-8')
-            st.download_button("Download CSV", csv, "sat_influencers.csv", "text/csv")
+            st.download_button("Download CSV", csv, "youtube_influencers.csv", "text/csv")
         else:
             st.warning("No influencers found in that range.")
