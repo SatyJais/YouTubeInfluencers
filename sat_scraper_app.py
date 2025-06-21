@@ -50,7 +50,7 @@ if run_search:
         for item in results:
             channel_id = item['snippet']['channelId']
             stats = get_channel_stats(channel_id)
-            if 100 <= stats.get('Subscribers', 0) <= max_subs:
+            if 1000 <= stats.get('Subscribers', 0) <= max_subs:
                 influencer_data.append(stats)
 
         if influencer_data:
