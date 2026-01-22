@@ -88,8 +88,8 @@ https://<username>-<repo-name>.streamlit.app
 
 
 
-# Code
-''' bash
+# Python Code for YouTube Influencer list extractor
+''' python
 import streamlit as st
 from googleapiclient.discovery import build
 import pandas as pd
