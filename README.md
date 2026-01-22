@@ -1,7 +1,21 @@
 <img src="assets/YouTubeCreatorFinder.png" alt="YouTubeCreatorFinder" style="width:100%; height:auto;">
+[PORTFOLIO_HOME](https://satyjais.github.io/)
 
 A **keyword-driven influencer discovery application** built using **Streamlit** and the **YouTube Data API v3**.  
 The tool enables discovery of **small to mid-sized YouTube creators across any niche**, with pagination, audience-size filtering, and exportable datasets.
+
+**Business Problem ** - As part of the go-to-market (GTM) strategy for an AI-driven test-prep platform, the marketing team needed to build a scalable pool of micro- and mid-tier influencers for content creation, influencer campaigns, video collaborations, and platform reviews.
+There was no reliable, affordable directory of education-focused creators, and manual discovery was slow, inconsistent, and not repeatable.
+
+**Solution **- I led the GTM initiative and designed an automated creator-discovery solution to eliminate manual research. Using a rapid, AI-assisted development approach, I built a tool that programmatically identifies YouTube creators based on keyword signals in channel metadata, video titles, and descriptions—allowing the team to surface relevant education-niche creators at scale. 
+
+**Tech stack used ** - The solution uses Python as the programming language, Google YouTube data API for  Creator and video metadata extraction and Streamlit to host as a light weight web user interface
+
+**Result ** - 
+- Enabled rapid identification of micro- to mid-size education influencers aligned with the GTM strategy
+- Reduced manual creator discovery effort significantly
+- Supported outbound outreach workflows by generating structured creator shortlists
+- Successfully onboarded 5 creators into the influencer program within the initial rollout
 
 ---
 
@@ -34,15 +48,6 @@ The project is designed to be **API-first**, **deployment-ready**, and **easily 
 - **Streamlit**
 - **YouTube Data API v3**
 - **Pandas**
-
----
-
-## 📁 Project Structure
-
-youtube-influencer-discovery/
-├── sat_scraper_app.py # Streamlit application
-├── requirements.txt # Dependency definitions
-└── README.md # Project documentation
 
 ---
 
