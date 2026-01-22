@@ -1,5 +1,5 @@
 # 🔍 YouTube Influencer Discovery Tool
-<img src="assets/YouTubeCreatorFinder.png" alt="YouTubeCreatorFinder" style="width:60%; height:auto;">
+<img src="assets/YouTubeCreatorFinder.png" alt="YouTubeCreatorFinder" style="width:100%; height:auto;">
 
 A **keyword-driven influencer discovery application** built using **Streamlit** and the **YouTube Data API v3**.  
 The tool enables discovery of **small to mid-sized YouTube creators across any niche**, with pagination, audience-size filtering, and exportable datasets.
