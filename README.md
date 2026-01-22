@@ -96,10 +96,10 @@ import pandas as pd
 import os
 API_KEY = os.getenv("API_KEY")
 ---- CONFIG ----
-API_KEY = ''   <-- Replace with your actual API key
+#API_KEY = ''   <-- Replace with your actual API key
 youtube = build('youtube', 'v3', developerKey=API_KEY)
 
----- FUNCTIONS ----
+#---- FUNCTIONS ----
 def search_channels(query, max_results=500):
     request = youtube.search().list(
         q=query,
@@ -128,7 +128,7 @@ def get_channel_stats(channel_id):
         }
     return {}
 
- ---- STREAMLIT UI ----
+ #---- STREAMLIT UI ----
 st.title("🎓 YouTube Influencer Finder")
 
 search_query = st.text_input("Search Keyword", value="SAT prep")
@@ -154,7 +154,7 @@ if run_search:
             st.download_button("Download CSV", csv, "youtube_influencers.csv", "text/csv")
         else:
             st.warning("No influencers found in that range.")
-'''
+```
 
 ### Built by Satyarth
 #### For questions or collaborations, reach out at jaiswal.satyarth070@gmail.com
