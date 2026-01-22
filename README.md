@@ -1,4 +1,5 @@
 <img src="assets/YouTubeCreatorFinder.png" alt="YouTubeCreatorFinder" style="width:100%; height:auto;">
+
 [PORTFOLIO_HOME](https://satyjais.github.io/)
 
 A **keyword-driven influencer discovery application** built using **Streamlit** and the **YouTube Data API v3**.  
