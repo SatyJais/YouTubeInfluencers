@@ -12,7 +12,7 @@ There was no reliable, affordable directory of education-focused creators, and m
 
 **Tech stack used** - The solution uses Python as the programming language, Google YouTube data API for  Creator and video metadata extraction and Streamlit to host as a light weight web user interface
 
-**Result** - 
+**Results** - 
 - Enabled rapid identification of micro- to mid-size education influencers aligned with the GTM strategy
 - Reduced manual creator discovery effort significantly
 - Supported outbound outreach workflows by generating structured creator shortlists
